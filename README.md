@@ -1,2 +1,0 @@
-# NEXT4FIVE-45-UBY-UNGU
-Official NEXT4FIVE45 Community Website
