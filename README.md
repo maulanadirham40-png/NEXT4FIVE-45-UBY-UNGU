@@ -41,7 +41,7 @@ font-size:12px}
 <main>
 <section class="hero">
 <div class="eyebrow">WELCOME TO OUR WORLD</div>
-<h1>ONE NAME.<br><span>NEXT4FIVE 45 FAMILY.</span></h1>
+<h1>NEXT4FIVE 45 BACK BY ROBY NEXT4FIVE.<br><span>NEXT4FIVE 45 FAMILY.</span></h1>
 <p>Tempat berkumpul, berbagi cerita, dan
 membangun kebersamaan komunitas NEXT4FIVE45.</p>
 <a class="btn" href="#about">JELAJAHI KOMUNITAS</a>
