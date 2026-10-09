@@ -1,72 +1,57 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#090711">
-<title>NEXT4FIVE45 Community</title>
+<meta name="theme-color" content="#100817">
+<meta name="description" content="NEXT4FIVE45 Official Community — Loyalty Is Everything.">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icons/icon-192.png">
+<title>NEXT4FIVE45 — Official Community</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#090711;color:#fff;
-font-family:Arial,sans-serif}
-header{text-align:center;padding:30px 12px;
-background:linear-gradient(140deg,#321052,#090711);
-border-bottom:1px solid #8b35bd}
-.logo{font-size:30px;font-weight:900;letter-spacing:2px}
-.logo span,h1 span{color:#d18aff}
-.tag{font-size:11px;letter-spacing:3px;color:#d5b7e8;
-margin-top:8px}
-main{max-width:600px;margin:auto;padding:20px}
-.hero{text-align:center;padding:35px 0}
-.eyebrow{font-size:12px;letter-spacing:3px;color:#d18aff}
-h1{font-size:38px;line-height:1.2}
-p{color:#c9bfd4;line-height:1.8}
-.card{background:#171020;border:1px solid #44235b;
-border-radius:16px;padding:20px;margin:18px 0}
-h2{font-size:18px}
-.btn{display:block;text-align:center;text-decoration:none;
-padding:15px;margin:12px 0;border-radius:10px;
-background:#a83be5;color:white;font-weight:bold}
-.alt{background:#21152d;border:1px solid #70418d}
-footer{text-align:center;padding:25px;color:#9688a2;
-font-size:12px}
+:root{--bg:#09070d;--panel:#17101f;--purple:#a855f7;--pink:#f472b6;--text:#f8f4ff;--muted:#c5b9d3}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#291039 0,#09070d 52%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}
+header{padding:24px 18px 14px;text-align:center} .mark{width:96px;height:96px;border:2px solid var(--purple);border-radius:24px;margin:8px auto 16px;display:grid;place-items:center;background:linear-gradient(145deg,#25102f,#09070d);box-shadow:0 0 30px #a855f755;font-weight:900;font-size:24px;letter-spacing:-2px}
+h1{font-size:clamp(28px,7vw,42px);margin:0;letter-spacing:1px} .tag{color:var(--pink);font-size:12px;font-weight:800;letter-spacing:3px;margin-top:8px}
+main{max-width:760px;margin:auto;padding:10px 16px 34px}.card{background:#17101fdd;border:1px solid #57316d;border-radius:20px;padding:20px;margin:14px 0;box-shadow:0 10px 35px #0004}
+h2{margin:0 0 10px;font-size:20px}.muted{color:var(--muted);line-height:1.65}.pill{display:inline-block;background:#321746;border:1px solid #75459a;border-radius:999px;padding:7px 11px;margin:4px;font-size:12px}
+.actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:16px}.btn{display:block;text-decoration:none;text-align:center;padding:14px 16px;border-radius:13px;font-weight:800;background:linear-gradient(100deg,#9333ea,#db2777);color:white;border:0}.btn.secondary{background:#21172a;border:1px solid #65417a}.rule{padding:10px 0;border-bottom:1px solid #ffffff14}.rule:last-child{border:0}
+footer{text-align:center;color:#9c8aa9;padding:20px;font-size:12px}
 </style>
 </head>
 <body>
 <header>
-<div class="logo">NEXT4FIVE<span>45</span></div>
-<div class="tag">LOYALTY IS EVERYTHING</div>
+<div class="mark" aria-label="NEXT4FIVE45 logo">NX45</div>
+<h1>NEXT4FIVE45</h1><div class="tag">LOYALTY IS EVERYTHING</div>
 </header>
 <main>
-<section class="hero">
-<div class="eyebrow">WELCOME TO OUR WORLD</div>
-<h1>ONE NAME.<br><span>ONE FAMILY.</span></h1>
-<p>Tempat berkumpul, berbagi cerita, dan
-membangun kebersamaan komunitas NEXT4FIVE45.</p>
-<a class="btn" href="#about">JELAJAHI KOMUNITAS</a>
-<a class="btn alt" href="#join">GABUNG BERSAMA KAMI</a>
-</section>
-<section class="card" id="about">
-<h2>✦ ABOUT US</h2>
-<p>NEXT4FIVE45 adalah komunitas yang menjunjung
-loyalitas, rasa hormat, dan solidaritas.</p>
-</section>
 <section class="card">
-<h2>✦ COMMUNITY RULES</h2>
-<p>01. Saling menghormati.<br>
-02. Jaga privasi anggota.<br>
-03. Hindari spam dan penipuan.<br>
-04. Jaga nama baik komunitas.</p>
+<h2>Welcome to the official community</h2>
+<p class="muted">Satu komunitas, satu rasa persaudaraan. Tempat berbagi informasi, mempererat kebersamaan, dan menjaga loyalitas dengan sikap saling menghormati.</p>
+<div><span class="pill">UNITY</span><span class="pill">LOYALTY</span><span class="pill">RESPECT</span></div>
+<div class="actions">
+<a class="btn" href="https://wa.me/6287721873603?text=Halo%20NEXT4FIVE45%2C%20saya%20ingin%20bertanya%20tentang%20komunitas." target="_blank" rel="noopener">Hubungi via WhatsApp</a>
+<button class="btn secondary" id="shareBtn" type="button">Bagikan link aplikasi</button>
+<button class="btn secondary" id="installBtn" type="button" hidden>Pasang aplikasi</button>
+</div>
+<p id="shareStatus" class="muted" role="status"></p>
 </section>
-<section class="card" id="join">
-<h2>✦ JOIN THE COMMUNITY</h2>
-<p>Tempatkan tautan grup resmi komunitasmu
-di tombol WhatsApp berikut.</p>
-<a class="btn alt" href="https://wa.me/">WHATSAPP</a>
+<section class="card"><h2>Tentang NEXT4FIVE45</h2><p class="muted">NEXT4FIVE45 adalah identitas komunitas yang membawa pesan loyalitas, persaudaraan, dan kebersamaan. Jaga komunikasi tetap positif, hormati sesama anggota, dan lindungi privasi satu sama lain.</p></section>
+<section class="card"><h2>Pedoman komunitas</h2>
+<div class="rule">01 — Saling menghormati dan menjaga tutur kata.</div>
+<div class="rule">02 — Jangan membagikan data pribadi orang lain tanpa izin.</div>
+<div class="rule">03 — Gunakan grup untuk informasi yang relevan dan positif.</div>
+<div class="rule">04 — Jika ada masalah, selesaikan dengan tenang dan dewasa.</div>
 </section>
+<section class="card"><h2>Halaman pemilik / admin</h2><p class="muted">Halaman admin dapat dibuka dari tautan berikut. Versi paket ini hanya menyediakan panel lokal untuk draf konten; autentikasi ini belum melindungi data publik. Admin sungguhan yang aman memerlukan layanan autentikasi dan penyimpanan server.</p><a class="btn secondary" href="./admin.html">Buka panel admin</a></section>
 </main>
-<footer>NEXT4FIVE45 © 2026<br>
-LOYALTY IS EVERYTHING.</footer>
-</body>
-</html>
+<footer>© NEXT4FIVE45 · Loyalty Is Everything</footer>
+<script>
+if ('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+let deferredPrompt;
+const installBtn=document.getElementById('installBtn');
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;installBtn.hidden=false;});
+installBtn.addEventListener('click',async()=>{if(!deferredPrompt){document.getElementById('shareStatus').textContent='Jika tombol pemasangan belum tersedia, buka menu browser ⋮ lalu pilih Tambahkan ke layar utama / Install app.';return;}deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;installBtn.hidden=true;});
+document.getElementById('shareBtn').addEventListener('click',async()=>{const data={title:document.title,text:'NEXT4FIVE45 Official Community — Loyalty Is Everything.',url:location.href};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(location.href);document.getElementById('shareStatus').textContent='Link berhasil disalin. Tempelkan ke WhatsApp untuk membagikannya.';}}catch(e){document.getElementById('shareStatus').textContent='Salin alamat halaman dari kolom browser, lalu kirim melalui WhatsApp.';}});
+</script>
+</body></html>
